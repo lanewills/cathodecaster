@@ -12,7 +12,7 @@ base_freq_E = 329.63
 
 
 # Generate the frequencies for each string
-freq_low_E = [base_freq_E * (2 ** (n / 12)) for n in range(20)]
+freq_low_E = [base_freq_low_E * (2 ** (n / 12)) for n in range(20)]
 freq_A = [base_freq_A * (2 ** (n / 12)) for n in range(20)]
 freq_D = [base_freq_D * (2 ** (n / 12)) for n in range(20)]
 freq_G = [base_freq_G * (2 ** (n / 12)) for n in range(20)]
@@ -95,7 +95,7 @@ def change_string():
         string_2 = freq_E
     elif string_1 == freq_B:
         string_1 = freq_E
-        string_2 = freq_A
+        string_2 = freq_low_E
     elif string_1 == freq_E:
         string_1 = freq_low_E
         string_2 = freq_A
