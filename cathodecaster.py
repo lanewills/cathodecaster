@@ -145,7 +145,7 @@ def main():
                 current_wave.set_frequency(freq)
                 print(f"{val2} received from pot 2. playing frequency {freq}")
             else:
-                sinewave.stop()
+                current_wave.stop()
 
         except KeyboardInterrupt:
             print("keyboard interrupt detected, quitting.")
