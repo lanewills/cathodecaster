@@ -5,7 +5,7 @@ This repository holds the code for my CRT-driven guitar, which I nicknamed the C
 Here are some of the main components I used in my build:
 * Raspberry Pi 4 w/ 32gb microSD
 * 3.5mm to composite AV cable
-* JVC TM-9U CRT TV
+* JVC TM-9U(A) CRT TV
 * 2x Spectra Symbol 500mm SoftPot
 * MCP3008 ADC
 * A breadboard, along with a few jumper cables and 10k resistors
@@ -17,7 +17,7 @@ Make sure you have the requirements installed, then you can run it like any othe
 
 ```python3 cathodecaster.py```
 
-In my implementation, I added this to my .bashrc and disabled GUI boot so it's running first thing after boot (just hit ctrl+c to regain control, if needed).
+In my implementation, I added this to my .bashrc and disabled GUI boot, so it's running first thing after boot (just hit ctrl+c to regain control, if needed).
 
 ## How it works
 I tried to make the script as efficient as possible, since this is an instrument and needs to be as responsive as possible.
@@ -34,7 +34,9 @@ And that's pretty much it! I still have a few ideas for features I want to imple
 
 ## Next Steps
 A couple extra features I want to add in the future:
-* Octave switching
-* Waveform switching
 * Fretless mode switch
 * Safe shutdown button
+
+And a few things I would do differently if I were to build another one:
+* Use a smaller CRT
+* Use ThinPot potentiometers for more strings
